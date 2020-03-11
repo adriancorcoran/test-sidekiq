@@ -71,3 +71,6 @@ end
 Rails.application.configure do
   config.web_console.whitelisted_ips = "192.168.64.0/24"
 end
+
+# turn off puma logging
+Rails.application.config.x.shopify_metrics_disable_puma_plugin = true
